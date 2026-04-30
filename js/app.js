@@ -7,10 +7,10 @@ let tasks = [
     {id:1, title: "Go to work", status: false},
 ];
 
-const dataStructure = () => {
+const reder = () => {
     tasks.forEach(task => {
-        bodyElem.innerHTML += `<li class="m-4 p-4 text-lg border border-gray-200 rounded-2xl list-none">${task.title}</li>`
+        
     })
 }
 
-dataStructure()
+reder()

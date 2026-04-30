@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("./fonts/Vazirmatn-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "VazirBold";
+    src: url("./fonts/Vazirmatn-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "VazirLight";
+    src: url("./fonts/Vazirmatn-Light.woff2") format("woff2");
+}
+
+*, body, input {
+    font-family: "Vazir";
+}
+
+input {
+    outline: none;
+}
+
+input::placeholder {
+    font-family: "VazirLight";
+}
+
+button {
+    font-family: "VazirBold";
+}
+

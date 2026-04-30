@@ -1,11 +1,30 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <script src="./js/app.js"></script>
-  </body>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 text-slate-800">
+  <div class="container bg-white mx-auto p-2 rounded-lg w-[420px] mt-10 shadow-sm">
+    <form>
+      <input class="rounded-md border w-full border-slate-300 p-2 focus:border-sky-500" placeholder="یک تسک اجاد کنید"
+        type="text" id="input-task">
+      <button
+        class="w-full p-2 m-2 bg-sky-500 hover:bg-sky-600 transition text-white text-md mx-auto rounded-md cursor-pointer"
+        type="submit">
+        ایجاد
+      </button>
+    </form>
+    <div class="bg-slate-300 rounded-full my-2 h-[1px]"></div>
+    <ul class="tasks">
+
+    </ul>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
