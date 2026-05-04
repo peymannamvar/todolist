@@ -8,21 +8,19 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-gray-100 text-slate-800">
-  <div class="container bg-white mx-auto p-2 rounded-lg w-[420px] mt-10 shadow-sm">
-    <form>
-      <input class="rounded-md border w-full border-slate-300 p-2 focus:border-sky-500" placeholder="یک تسک اجاد کنید"
+<body class="bg-gray-100 select-none">
+  <div class="container bg-white mx-auto p-2 rounded-xl w-[420px] mt-10 shadow-sm">
+    <form onsubmit="Onsubmit(event)">
+      <input class="rounded-lg border w-full border-slate-300 p-2 focus:border-sky-500" placeholder="یک تسک اجاد کنید"
         type="text" id="input-task">
       <button
-        class="w-full p-2 m-2 bg-sky-500 hover:bg-sky-600 transition text-white text-md mx-auto rounded-md cursor-pointer"
+        class="w-full p-2 m-2 bg-sky-500 hover:bg-sky-600 transition text-white text-md mx-auto rounded-lg cursor-pointer"
         type="submit">
         ایجاد
       </button>
     </form>
-    <div class="bg-slate-300 rounded-full my-2 h-[1px]"></div>
-    <ul class="tasks">
-
-    </ul>
+    <div class="bg-slate-300 rounded-full my-2 mb-4 h-[1px]"></div>
+    <ul class="tasks flex flex-col gap-2"></ul>
   </div>
   <script src="./js/app.js"></script>
 </body>
